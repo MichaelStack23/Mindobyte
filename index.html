@@ -126,10 +126,46 @@ section{padding:68px 0}
 .svc,.mods{grid-template-columns:1fr}.s:nth-child(n){grid-column:span 1}
 .screen{height:320px}.kpis{grid-template-columns:repeat(2,1fr)}.kpi:nth-child(3){display:none}
 }
+:root{--paper:#F3F6FB;--ink:#0A1530;--blue:#1D4ED8;--blue-soft:#E8EEFD;--line:#E0E6F0}
+body{font-size:16.5px}
+.topbar{background:var(--ink);color:#B8C4E0;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:9px;padding-bottom:9px}
+.topbar span{display:flex;gap:24px;flex-wrap:wrap}.topbar a{text-decoration:none}.topbar a:hover{color:#fff}
+header{background:#fff}
+.btn{border-radius:10px}
+.hero{background:#fff;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:44px 44px;opacity:.6;-webkit-mask-image:linear-gradient(90deg,transparent 30%,#000);mask-image:linear-gradient(90deg,transparent 30%,#000)}
+.hero .wrap{position:relative}
+.hero h1{font-weight:700;letter-spacing:-.03em}
+.stage{border-radius:18px;box-shadow:0 28px 50px -26px rgba(10,21,48,.3)}.screen{border-radius:12px}
+.facts{background:var(--ink);color:#fff}
+.facts .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.fact{padding:28px 24px;border-left:1px solid #1F2E55}.fact:first-child{border-left:0;padding-left:0}
+.fact strong{display:block;font:700 20px "Bricolage Grotesque",sans-serif;letter-spacing:-.01em}.fact span{color:#9FB0D6;font-size:15px}
+.s{border-radius:14px;padding:30px;transition:border-color .2s,box-shadow .2s}
+.s:hover{border-color:#B7C6F4;box-shadow:0 16px 32px -20px rgba(29,78,216,.45)}.s.feat:hover{border-color:var(--ink);box-shadow:none}
+.ic{border-radius:10px}
+.erpsec{background:var(--paper)}.mod{background:#fff;border-radius:12px}
+.why{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden}
+.why div{padding:30px 26px;border-left:1px solid var(--line)}.why div:first-child{border-left:0}
+.why h3{font-size:19px;margin-bottom:8px}.why p{font-size:15px;color:var(--muted)}
+.contact{background:var(--ink);border-radius:20px}.contact p{color:#B8C4E0}
+input,select,textarea{border-radius:10px}
+form .btn{background:var(--blue)}form .btn:hover{background:#3563E6}
+footer{background:var(--ink);color:#9FB0D6;padding:64px 0 0}
+footer .wrap{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:40px;border-top:0;padding-top:0}
+footer h4{margin:0 0 14px;color:#fff;font:700 16px "Bricolage Grotesque",sans-serif}
+footer a,footer .l{display:block;color:#9FB0D6;text-decoration:none;margin-bottom:9px;font-size:15px}footer a:hover{color:#fff}
+footer a.logo{display:flex;color:#fff;margin-bottom:14px}footer p{font-size:15px;max-width:34ch}
+footer .wrap.base{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid #1F2E55;margin-top:48px;padding:22px 24px 30px;font-size:14px}
+@media(max-width:960px){.facts .wrap,.why{grid-template-columns:1fr 1fr}.fact:nth-child(3){border-left:0;padding-left:0}.why div:nth-child(3){border-left:0}.why div:nth-child(n+3){border-top:1px solid var(--line)}footer .wrap{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.facts .wrap,.why{grid-template-columns:1fr}.fact{border-left:0;padding:20px 0;border-top:1px solid #1F2E55}.fact:first-child{border-top:0}.why div{border-left:0;border-top:1px solid var(--line)}.why div:first-child{border-top:0}footer .wrap{grid-template-columns:1fr}.topbar .wrap>span:first-child{display:none}.topbar .wrap{justify-content:flex-start}}
+.legal{display:none;padding:56px 0 96px}.legal .doc{max-width:760px;margin:0 auto;background:var(--white);border:1px solid var(--line);border-radius:24px;padding:48px}.legal h1{font-size:clamp(34px,4.4vw,52px);font-weight:800}.legal .upd{color:var(--muted);margin:10px 0 28px}.legal h2{font-size:22px;margin:32px 0 8px}.legal p,.legal li{color:#33405C;font-size:16.5px}.legal p{margin-top:8px}.legal ul{margin:8px 0 0;padding-left:22px}.legal li{margin-top:4px}.legal a{color:var(--blue)}.legal .back{display:inline-block;margin-bottom:22px;font-weight:600;text-decoration:none}.legal .note{margin-top:32px;padding:14px 16px;border-radius:12px;background:var(--blue-soft);font-size:15px}footer .fl{display:flex;gap:20px;flex-wrap:wrap}footer .fl a{text-decoration:none}@media(max-width:700px){.legal .doc{padding:28px 22px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
+<div class="topbar"><div class="wrap"><span>Software development company in Nagpur, Maharashtra</span><span><a href="mailto:hello@mindobyte.in">hello@mindobyte.in</a><a href="tel:+910000000000">+91 00000 00000</a></span></div></div>
 <header><div class="wrap nav">
   <a class="logo" href="#top" aria-label="Mindobyte Technologies home"><i aria-hidden="true"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></i>Mindobyte</a>
   <button class="menu" id="menu" aria-expanded="false" aria-controls="links">Menu</button>
@@ -178,6 +214,13 @@ section{padding:68px 0}
   </div>
 </div></section>
 
+<div class="facts"><div class="wrap">
+<div class="fact"><strong>Desktop, web &amp; mobile</strong><span>Windows, browsers, Android, iOS</span></div>
+<div class="fact"><strong>ERP &amp; custom software</strong><span>Built around your process</span></div>
+<div class="fact"><strong>Weekly progress</strong><span>Demos you can test early</span></div>
+<div class="fact"><strong>Based in Nagpur</strong><span>Support after launch</span></div>
+</div></div>
+
 <section id="services"><div class="wrap">
   <div class="head"><h2>Every kind of application, built under one roof</h2><p class="lead">Tell us the problem. We choose the platform that solves it and build the whole thing, from design to deployment.</p></div>
   <div class="svc">
@@ -204,6 +247,16 @@ section{padding:68px 0}
     <div class="mod"><h3>CRM</h3><p>Leads, follow-ups and customer history in one place.</p></div>
     <div class="mod"><h3>Production</h3><p>Bills of material, work orders and job tracking.</p></div>
     <div class="mod"><h3>Reports</h3><p>Live dashboards for owners and managers.</p></div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="head"><h2>Why businesses choose Mindobyte</h2></div>
+  <div class="why">
+    <div><h3>One team, every platform</h3><p>Desktop, web, Android, iOS and ERP from the same people, so your systems work together.</p></div>
+    <div><h3>Built around your process</h3><p>We map how your business runs first, then build software that fits it.</p></div>
+    <div><h3>Clear and predictable</h3><p>Fixed scope, a written plan and weekly demos. No surprises on cost or timeline.</p></div>
+    <div><h3>Support that lasts</h3><p>Training, fixes and updates after launch, from a team in your own city.</p></div>
   </div>
 </div></section>
 
@@ -242,7 +295,19 @@ section{padding:68px 0}
 </div></section>
 </main>
 
-<footer><div class="wrap"><span>© 2026 Mindobyte Technologies, Nagpur</span><span>Desktop · Web · Android · iOS · ERP</span></div></footer>
+
+
+
+
+<footer>
+<div class="wrap">
+  <div><a class="logo" href="#top"><i aria-hidden="true"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></i>Mindobyte</a><p>A software company in Nagpur building desktop, web, mobile and ERP solutions for growing businesses.</p></div>
+  <div><h4>Services</h4><a href="#services">Web applications</a><a href="#services">Desktop applications</a><a href="#services">Android &amp; iOS apps</a><a href="#erp">ERP systems</a></div>
+  <div><h4>Company</h4><a href="#process">How we work</a><a href="#stack">Technology</a><a href="#contact">Contact</a></div>
+  <div><h4>Contact</h4><span class="l">Nagpur, Maharashtra, India</span><a href="mailto:hello@mindobyte.in">hello@mindobyte.in</a><a href="tel:+910000000000">+91 00000 00000</a></div>
+</div>
+<div class="wrap base"><span>© 2026 Mindobyte Technologies. All rights reserved.</span><span class="fl"><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></span></div>
+</footer>
 
 <script>
 (function(){
